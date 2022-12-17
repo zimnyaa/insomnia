@@ -1,6 +1,8 @@
 # insomnia (stage1)
 
-`insomnia` is meant to be a stage1 DLL loader (with DarkLoadLibrary). It works when injected with process hollowing modified to launch an .exe instead of PIC, and sleeps with a modified version of Ekko (covered at length in https://tishina.in/execution/phase-dive-sleep-obfuscation) to avoid memory scanning of newly created processes. 
+discussed in: https://tishina.in/execution/DOUBLEGOD-and-insomnia-loader
+
+`insomnia` is meant to be a very simple stage1 DLL loader (with DarkLoadLibrary). It works when injected with process hollowing modified to launch an .exe instead of PIC, and sleeps with a modified version of Ekko (covered at length in https://tishina.in/execution/phase-dive-sleep-obfuscation) to avoid memory scanning of newly created processes. 
 
 It is created to be used with the `DOUBLEGOD` unhooking+injection technique, the implementation of which stays private at the moment.
 
